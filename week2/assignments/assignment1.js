@@ -19,7 +19,7 @@ const checkEvenOrOdd = (number) => {
 }
 console.log(checkEvenOrOdd(5)); 
 console.log(checkEvenOrOdd(10)); 
-
+    
 //4. Create a function that reverses a string.
 const reverseString = (str) => {
   return str.split('').reverse().join('');
