@@ -4,17 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #lorem{
+            color:bisque; 
+            font-size: 1.5 rem;
+            font-weight: 300;
+            border: px solid black;
+            background-color: rgb(211, 161, 169);
+            border-radius: 70 px;
+            
+        }
+        .greet{
+            color: rgb(80, 80, 175);
+        }
+        table,td,th{
+            border-collapse: collapse;
+        }
+    </style>
+    <link rel="stylesheet" href="../css/lesson1.css">
 </head>
 <body>
     <!-- This is body section -->
-    <h1 id="hey" class="">
-        heyy!!!!
-    </h1> 
-    <h2> hey</h2>
-    <h3> hey</h3>
-    <h4> hey</h4>
-    <h5> hey</h5>
-    <h6> hey</h6>
+    <!-- inline styling -->
+    <h1 id="hey" class="greet" style="color: paleturquoise; font-weight: 500; "> heyy!!!!</h1> 
+
+    <h2 class="greet"> hey</h2>
+    <h3 class="greet"> hey</h3>
+    <h4 class="greet"> hey</h4>
+    <h5 class="greet"> hey</h5>
+    <h6 class="greet"> hey</h6>
+
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKhW4ivaEb1soYDvlPaf7ZKI7gMdJ6K21-Aw&s" width="300px" alt="puppy">
     <p> <b> Bold Text</b></p>
     <p> <strong> Strong Text </strong></p>
@@ -31,10 +50,10 @@
     <blockquote cite="https://www.who.int/news/item/01-06-2024-world-health-assembly-agreement-reached-on-wide-ranging--decisive-package-of-amendments-to-improve-the-international-health-regulations--and-sets-date-for-finalizing-negotiations-on-a-proposed-pandemic-agreement">
         World Health Assembly agreement reached on wide-ranging, decisive package of amendments 
         to improve the International Health Regulations
-    </blockquote>
-    
+    </blockquote>    
     </address>
-    <pre> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta ut quibusdam 
+    
+    <pre id="lorem2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta ut quibusdam 
         iusto eaque dolorem aliquid velit iste possimus repellat debitis accusantium adipisci, 
         reiciendis maiores nemo deserunt. Distinctio, iure maxime!
     Consequuntur, natus. Laudantium eum velit non quam totam reiciendis, exercitationem, adipisci
@@ -46,8 +65,9 @@
     Corrupti ut neque consequuntur autem! Minima modi distinctio dolorum? Modi, saepe maiores repellendus 
     laudantium dolorem excepturi animi, vel illo voluptate odio aliquam culpa quasi incidunt fugit, unde 
     commodi magnam iusto!</pre>
+    
 
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente doloribus debitis 
+    <p id="lorem"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente doloribus debitis 
         iste obcaecati eos illum id. Sequi cum enim totam nam fugiat fuga et debitis. Inventore 
         consequatur alias a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente 
         consequuntur nesciunt nemo tenetur commodi, quia soluta inventore asperiores? Rerum provident
@@ -62,12 +82,89 @@
              amet consectetur adipisicing elit. Vitae nisi, expedita rem ut reiciendis ea quae culpa, qui beatae dolorum tenetur ex pariatur 
              voluptatem delectus optio magni magnam libero et?</p>      
 
+             <hr>
+
+             <!-- inline styling   square, circle, disc, none default: disc -->
+             <ul style="list-style: square;"> 
+                <li> food</li>
+                <li> books</li>
+                <li> music </li>
+                <li> movies</li>
+             </ul>
+
+              <!-- inline styling   1, A, a, I, i default:1 -->
+             <ol type="i" start="iv"> 
+                <li> food</li>
+                <li> books</li>
+                <li> music </li>
+                <li> movies</li>
+             </ol>
+             <hr> 
+             <table border="5">
+                <tr> 
+                    <th> Name </th>
+                    <th> Hobbies </th>
+                </tr>
+                <tr>
+                    <td> Dee</td>
+                    <td> Art</td>
+                </tr>
+                <tr>
+                    <td> Aasma</td>
+                    <td> Singing</td>
+                </tr>
+                <tr>
+                    <td> Pra</td>
+                    <td> Dancing</td>
+                </tr>
+             </table>
+             <hr> 
+             <h3 style="color: rgb(134, 36, 36);"> FORM</h3>
+            <form enctype="multipart/form-data">
+                <label for="name"> Name: </label>
+                <input type="name" text id="name" /><br> 
+                <label for="email"> Email: </label>
+                <input type="email" text id="email" /><br> 
+                <!-- height in text area: rows, width: columns -->
+                <textarea rows="10" cols="26.5"></textarea> <br> 
+                <select > 
+                    <option value="male">Male </option>
+                    <option value="female">Female </option>
+                    <option value="other">Other </option>
+                </select > <br> 
+                <!--  <input type="file" multiple/> for selecting multiple files else no need to write multiple-->
+                <input type="file" multiple/> <br>
+                <input type="submit" value="Submit"/>
+            </form>
+            <hr>
+
+            <form>
+                <input type="radio" id="male" name=" gender" value="male"/>
+                <label for="male"> Male</label>
+                <input type="radio" id="female" name=" gender" value="female"/>
+                <label for="female"> Female</label>
+                <input type="radio" id="other" name=" gender" value="other"/>
+                <label for="other"> Other</label>
+            </form>
+            <hr>
+
+            <!-- checkbox is used to select multiple values -->
+            <form>
+                <input type="checkbox" id="vehicle1" name=" vehicle1" value="Bike"/>
+                <label for="vehicle1"> Bike</label>
+                <input type="checkbox" id="vehicle2" name=" vehicle2" value="Car"/>
+                <label for="vehicle2"> Car</label>
+                <input type="checkbox" id="vehicle3" name=" vehicle3" value="Boat"/>
+                <label for="vehicle3"> Boat</label>
+            </form>           
              
+             <hr> 
             <a href="#hey"> Go Up</a>
             <br>
             <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"> Insta</a>
             <br>
     <a href="./landing.html" target="_self"> Go To HomePage </a>
+    <hr>
     <address> 
         Written by Dee. <br>
         Lalitpur, Nepal
