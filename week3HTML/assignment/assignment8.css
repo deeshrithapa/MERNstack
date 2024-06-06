@@ -1,0 +1,22 @@
+*{
+    background-color:rgb(228, 222, 227);
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.images{
+
+    display: flex;
+ 
+    justify-content: space-evenly;
+    
+    
+}
+
+
+.go-up:hover {
+    color: rgb(233, 26, 19);
+}

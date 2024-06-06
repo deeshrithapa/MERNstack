@@ -1,0 +1,41 @@
+#div1, #div2, #para{
+    background-color: aquamarine;
+    border: 1px, solid, black;
+}
+
+#insta:link{
+    color: black;
+}
+#insta:visited{
+    color: red;
+}
+#insta:hover{
+    color: blue;
+}
+#para::first-letter{
+    text-transform: uppercase;
+}
+#para::first-line{
+    font-size: 28px;
+}
+#div1::before {
+    content: '';
+    display: block; /* Ensure it takes up space */
+    width: 600px; /* Set desired width */
+    height: 400px; /* Set desired height */
+    background-image: url(../extra/login.png);
+    background-size: contain; /* Resize the image to fit within the element */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+}
+
+#para::after{
+    content: "This is after the content";
+}
+input[type="text"]{
+    color: red;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid lightblue;
+    font-size: 20px;
+}
