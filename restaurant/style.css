@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #533B36;
+    
+}
+/*  HOMEPAGE */
+.home-nav{
+    background-color:#533B36;
+    height: 30px;
+   width: 100;
+    color: white;
+    font-size:large;
+    text-align: right;
+    line-height: 30px;
+    }
+
+.home-nav a{
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.home-container {
+    position: relative; 
+    width: 100%; 
+    text-align: center;
+}
+
+.home-container img {
+    width: 100%; 
+    height: auto; 
+    max-height: 50vh; 
+}
+.home-img-text{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 60px; 
+    padding: 10px 20px; 
+}
+.home-mid {
+    height: 300px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #533B36;
+    padding: 20px; 
+}
+.mid-img {
+    height: 290px; 
+    width: 440px;/* Set the height of the container */
+}
+
+.mid-img img {
+    max-width: 100%; /* Set maximum width to 100% of its container */
+    max-height: 100%; /* Set maximum height to 100% of its container */
+    object-fit: contain; /* Maintain aspect ratio while fitting within the container */
+}
+
+
+.mid-text {
+    max-width: 50%; /* Limit the width of the text content */
+    color: white; /* Set the text color */
+}
+.home-bottom img {
+    width: 100vw; /* Make the width of the image 100% of the viewport width */
+    height: 450px;
+    object-fit: cover; /* Ensure the image covers the entire div horizontally */
+}
+.home-bottom {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Adjust the size of the overlay */
+    height: 90%; /* Adjust the size of the overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bottom-text {
+    position: absolute;
+   
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 1;
+}
+

@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #AC9F9C;
+}
+
+.contact-nav {
+    background-color: #AC9F9C;
+    height: 30px;
+    width: 100%;
+    color: #533B36;
+    font-size: large;
+    text-align: right;
+    line-height: 30px;
+}
+
+.contact-nav a {
+    color: #533B36;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 10px;
+}

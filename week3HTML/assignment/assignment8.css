@@ -9,14 +9,9 @@
 }
 .images{
 
-    display: flex;
- 
-    justify-content: space-evenly;
-    
-    
+    display: flex; 
+    justify-content: space-evenly;    
 }
-
-
 .go-up:hover {
     color: rgb(233, 26, 19);
 }

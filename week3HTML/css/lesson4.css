@@ -1,0 +1,20 @@
+/*  display: none- no display and no space
+visibility: hidden- leaves space but no display */
+/* .demo{
+    display:none;
+    visibility: hidden;
+} */
+
+.main-div{
+    background-color: aqua;
+    color: brown;
+}
+/*  position: relative moves right top left bottom from normal position  */
+.sub-div{
+    background-color: rgb(173, 54, 157);
+    color: aliceblue;
+    width: 600px;
+    height: 200px;
+    position: relative;
+    left: 35%;
+    bottom: 20px;}
