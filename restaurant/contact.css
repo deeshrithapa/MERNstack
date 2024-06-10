@@ -6,12 +6,17 @@ body {
 
 .contact-nav {
     background-color: #AC9F9C;
-    height: 30px;
+    height: 60px; 
     width: 100%;
     color: #533B36;
     font-size: large;
-    text-align: right;
-    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
 }
 
 .contact-nav a {
@@ -20,6 +25,16 @@ body {
     margin-left: 20px;
     margin-right: 10px;
 }
+.contact-nav h1{
+   
+        font-size: 1.5em;
+        margin: 0;
+        flex-grow: 1;
+        text-align: center;
+    
+}
+
+
 
 .container {
     height: calc(100vh - 30px); 

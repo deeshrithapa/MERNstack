@@ -6,17 +6,19 @@ body{
 }
 /*  HOMEPAGE */
 .home-nav{
-    background-color:#533B36;
+    background-color: #AC9F9C;
     height: 30px;
    width: 100;
-    color: white;
+   color: #533B36;
     font-size:large;
     text-align: right;
     line-height: 30px;
+    position: sticky;
+    top: 0%;
     }
 
 .home-nav a{
-    color:white;
+    color: #533B36;
     text-decoration: none;
     margin-left: 20px;
     margin-right: 10px;
