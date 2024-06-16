@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript HTML Elements  </h2>
+    <p> Click the button to display the data.</p>
+    <button onclick="displayDate()"> The time is ?</button> <br></br>
+    <button id="btn"> Click Me</button> 
+    <p id="demo"></p>
+
+    <script>
+        function displayDate() {
+            document.getElementById("demo").innerHTML = Date();
+        }
+      
+        btn.addEventListener('click',function(){        
+        alert('Button Clicked');
+        btn.style.color= 'red';
+        
+        })
+
+    </script>   
+</body>
+</html>
