@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* transition is used for state like on-click, hover or active */
+        div #div1{
+            height: 250px;
+            width: 400px;
+            background-color: rgb(100, 224, 224);
+            margin-top: 180px;
+            margin-left: 350px;
+            text-align: center;
+            font-size: larger;
+            transition: height 2s, width 3s,background-color 2s;           
+        }     
+        
+        #div1:hover{
+            height: 200px;
+            width: 250px;
+            background-color: rgb(27, 109, 180);
+            color: white;
+            
+        }
+
+        div #div2{
+            height: 250px;
+            width: 400px;           
+            margin-left: 700px;            
+            font-size: larger;
+            text-align: center;
+           
+         
+           
+            animation: cardAnimate 2.5s infinite ;     
+        }
+        /* Animation Property */
+        @keyframes cardAnimate {
+            from {
+                background-color: rgb(240, 215, 230);
+            }
+            to{
+                background-color: rgb(168, 218, 129);
+                color: white;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="div1">
+            <p>
+                Transition Animation
+            </p>
+        </div>
+        <div id="div2">
+            <p>
+                 Animation Property 
+            </p>
+        </div>
+    </div>    
+</body>
+</html>
