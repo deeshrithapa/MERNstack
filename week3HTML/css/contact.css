@@ -1,0 +1,77 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #eddada;
+}
+.title{
+    display: flex;
+    background-color: rgb(162, 131, 131);
+}
+.heading{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 660px;
+}
+.form {
+    background-color: rgb(198, 153, 153);
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 570px;
+    margin-top: 100px;
+   
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container input {
+    width: 85%;
+    padding-right: 40px;
+}
+
+.password-container i {
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(185, 106, 106);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 16px;
+    align-self: center; 
+    width: 120px;
+}
+
+button:hover {
+    background-color: rgb(236, 199, 199);
+    color: black;
+    border: 1px solid black;
+}
