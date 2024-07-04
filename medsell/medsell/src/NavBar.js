@@ -5,7 +5,7 @@ import './NavBar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">Logo</div>
+      <div className="navbar-logo">ChatterBox</div>
       <input type="checkbox" id="navbar-toggle" className="navbar-toggle" />
       <label htmlFor="navbar-toggle" className="navbar-icon">
         <span className="navbar-icon-line"></span>

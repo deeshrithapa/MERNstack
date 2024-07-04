@@ -1,4 +1,6 @@
-/* src/Navbar.css */
+body{
+  background-color: #948f8f;
+}
 .navbar {
     display: flex;
     align-items: center;

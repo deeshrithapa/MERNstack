@@ -26,6 +26,11 @@
 
 .App-link {
   color: #61dafb;
+  font-size: larger;
+}
+
+.title{
+  color:rgb(9, 10, 10);
 }
 
 @keyframes App-logo-spin {
@@ -36,7 +41,7 @@
     transform: rotate(360deg);
   }
 }
-/* src/App.css */
+
 .section {
   padding: 100px 20px;
   height: 100vh;
