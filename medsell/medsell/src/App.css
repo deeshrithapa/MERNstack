@@ -33,6 +33,13 @@
   color:rgb(9, 10, 10);
 }
 
+.btn{
+  background-color:#282c34;
+  color:azure;
+  padding: 12px;
+  margin: 12px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

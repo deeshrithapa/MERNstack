@@ -3,17 +3,19 @@ import Navbar from './NavBar';
 import ClassComponent from './classComponent';
 import Counter from './counter';
 import Timer from './timer';
+import CounterFunction from './components/counter/counter_function';
+
 import './App.css';
 
 const App = () => {
-  return (
-   
+  return (   
     <div>
-        <ClassComponent />
+      <ClassComponent />
+      {/* <Timer /> */}
+      {/* <Counter /> */}
+      <CounterFunction />
+      <Navbar />
 
-    <Timer />
-    <Counter />
-        <Navbar />
       <section id="home" className="section">
       <h1 className="title">Home </h1> 
       <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -88,12 +90,8 @@ const App = () => {
         ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
         pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
          consequatur quod.</p>
-         </section>
-         
-
-         
+         </section>         
     </div>    
   );
 };
-
 export default App;

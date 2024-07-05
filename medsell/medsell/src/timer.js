@@ -36,8 +36,8 @@ class Timer extends Component {
     return (
       <div>
         <h1>Timer: {this.state.timerValue} seconds</h1>
-        <button onClick={this.startTimer}>Start Timer</button>
-        <button onClick={this.stopTimer}>Stop Timer</button>
+        <button  class = "btn" onClick={this.startTimer}>Start Timer</button>
+        <button class = "btn" onClick={this.stopTimer}>Stop Timer</button>
       </div>
     );
   }

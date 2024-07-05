@@ -17,7 +17,7 @@ body{
   .navbar-logo {
     font-size: 1.5rem;
   }
-  
+
   .navbar-toggle {
     display: none;
   }
@@ -65,11 +65,10 @@ body{
   
     .navbar-toggle:checked ~ .navbar-links {
       display: flex;
-      max-height: 300px; /* adjust this value based on the number of links */
+      max-height: 300px; 
     }
   }
-/* src/Navbar.css */
-/* Existing styles remain unchanged */
+
 
 .navbar-links {
     display: flex;
@@ -92,7 +91,7 @@ body{
   
     .navbar-toggle:checked ~ .navbar-links {
       display: flex;
-      max-height: 300px; /* adjust this value based on the number of links */
+      max-height: 300px; 
     }
   }
     
