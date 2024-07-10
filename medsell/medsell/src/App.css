@@ -1,5 +1,5 @@
 body {
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
 }
 
 button {
-  background-color: #2b587d;
+  background-color: #343a40;
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -40,9 +40,7 @@ button {
 }
 
 button:hover {
-  background-color: #63bbde;
-  color: black;
+  background-color: #495057;
 }
-
 
 

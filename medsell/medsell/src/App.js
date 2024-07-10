@@ -8,22 +8,26 @@ import CounterFunction from './components/counter/counter_function';
 import './App.css';
 import GreetComponent from './components/props/greetComponent';
 import GreetDeeComponents from './components/props/greetDeeComponents';
-import ParentComponent from './components/props/ParentComponent';
-import CounterParent from './components/props/ParentNumber';
-import MessageParent from './components/props/ParentMessage';
+import ParentMessageComponent from './components/messageComponent/ParentMessageComponent';
+import CounterParentComponent from './components/counter/CounterParentComponent';
+import ToggleComponent from './components/toggle/toggleComponent';
+
+
+
 const App = () => {
   return (
     <div className="app-container">
       <Navbar />
       <div className="components-container">
-        {/* <ClassComponent /> */}
+        <ClassComponent />
         <GreetComponent />
         <GreetDeeComponents />
-        <ParentComponent />
-        <CounterParent />
-        <MessageParent />
-      </div>
-     
+        <ToggleComponent/>
+        
+        <CounterParentComponent />
+        <ParentMessageComponent />
+       
+      </div>           
     </div>
   );
 };
