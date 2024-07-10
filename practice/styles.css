@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.input-group {
+    max-width: 300px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table thead th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.badge-active {
+    background-color: #e6f7e9;
+    color: #28a745;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.badge-inactive {
+    background-color: #fce8e6;
+    color: #dc3545;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.fa-pen, .fa-trash {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.fa-pen:hover, .fa-trash:hover {
+    color: #007bff;
+}
+
+.btn-outline-secondary {
+    background-color: #e0f0f8;
+    color: #1a73e8;
+    border-color: #e0f0f8;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #d4ebf8;
+    color: #1a73e8;
+}
+
+.btn-outline-primary {
+    background-color: #e0f0f8;
+    color: #1a73e8;
+    border-color: #e0f0f8;
+}
+
+.btn-outline-primary:hover {
+    background-color: #d4ebf8;
+    color: #1a73e8;
+}
+
+.input-group-text {
+    background-color: #f1f1f1;
+}
+
+.input-group-text .fas {
+    color: #6c757d;
+}
+
+.d-flex .input-group {
+    max-width: 250px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h2>User Management</h2>
+            <div class="d-flex">
+                <button class="btn btn-outline-secondary mx-1">Inactive users</button>
+                <button class="btn btn-outline-primary mx-1">Add User</button>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-end mb-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-icon">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="search-icon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Users Name</th>
+                    <th>Email</th>
+                    <th>Roles</th>
+                    <th>Last Logged In</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Elizabeth Lee</td>
+                    <td>ElizabethLee@email.com</td>
+                    <td>United States</td>
+                    <td>10/07/2023</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carlos Garcia</td>
+                    <td>CarlosGarcia@email.com</td>
+                    <td>Italy</td>
+                    <td>24/07/2023</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Elizabeth Bailey</td>
+                    <td>ElizabethBailey@email.com</td>
+                    <td>Canada</td>
+                    <td>08/08/2023</td>
+                    <td><span class="badge badge-inactive">Inactive</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ryan Brown</td>
+                    <td>RyanBrown@email.com</td>
+                    <td>Brazil</td>
+                    <td>31/08/2023</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ryan Young</td>
+                    <td>RyanYoung@email.com</td>
+                    <td>United Kingdom</td>
+                    <td>01/05/2023</td>
+                    <td><span class="badge badge-inactive">Inactive</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hailey Adams</td>
+                    <td>HaileyAdams@email.com</td>
+                    <td>Italy</td>
+                    <td>10/06/2023</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                    <td>
+                        <i class="fas fa-pen"></i>
+                        <i class="fas fa-trash"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

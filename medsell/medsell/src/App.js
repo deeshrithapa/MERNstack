@@ -6,92 +6,26 @@ import Timer from './timer';
 import CounterFunction from './components/counter/counter_function';
 
 import './App.css';
-
+import GreetComponent from './components/props/greetComponent';
+import GreetDeeComponents from './components/props/greetDeeComponents';
+import ParentComponent from './components/props/ParentComponent';
+import CounterParent from './components/props/ParentNumber';
+import MessageParent from './components/props/ParentMessage';
 const App = () => {
-  return (   
-    <div>
-      <ClassComponent />
-      {/* <Timer /> */}
-      {/* <Counter /> */}
-      <CounterFunction />
+  return (
+    <div className="app-container">
       <Navbar />
-
-      <section id="home" className="section">
-      <h1 className="title">Home </h1> 
-      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.</p></section>
-       
-      <section id="about" className="section">
-      <h1 className="title">About</h1> 
-      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.</p></section>
-      <section id="services" className="section">
-      <h1 className="title">Services</h1> 
-      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.</p>
-         </section>
-      <section id="contact" className="section">
-      <h1 className="title">Contact</h1> 
-      <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-       Vel rem fugiat mollitia omnis explicabo dignissimos odio voluptates 
-       earum minima iure quo atque repellat, dolores saepe natus magni, et, suscipit sit! Lorem,
-        ipsum dolor sit amet consectetur adipisicing elit. Amet earum, accusantium quos iusto et 
-        pariatur facere beatae vel. A nostrum rerum ut, dolores delectus nobis consequuntur vel facere
-         consequatur quod.</p>
-         </section>         
-    </div>    
+      <div className="components-container">
+        {/* <ClassComponent /> */}
+        <GreetComponent />
+        <GreetDeeComponents />
+        <ParentComponent />
+        <CounterParent />
+        <MessageParent />
+      </div>
+     
+    </div>
   );
 };
+
 export default App;

@@ -15,9 +15,13 @@ const decrement = ()=>{
     setCount(count -1);
 }
 
+const Styles={
+  
+}
+
   return (
     <>
-     <div> 
+     <div id="counter"> 
         <h1>  Counter Function  </h1>
         <h2> Count: {count} </h2>
         <button  class = "btn" onClick={increment}> Increment</button>
