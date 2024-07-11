@@ -10,7 +10,7 @@ const ToggleComponent = () => {
   return (
     <div className='mb-5 ml-5'>
       <ChildToggleComponent isOn={isOn} toggleSwitch={toggleSwitch} />
-      <button onClick={toggleSwitch}>Toggle Switch in parent Component</button>
+      <button className= {' px-4 py-4 mb-4 bg-red-300  hover:bg-red-800 hover:text-white'}  onClick={toggleSwitch}>Toggle Switch in parent Component</button>
     </div>
   )
 }

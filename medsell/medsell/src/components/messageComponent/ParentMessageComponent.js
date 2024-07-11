@@ -13,7 +13,7 @@ const ParentMessageComponent = () => {
   return (
     <div  className='mb-5 ml-5'>
       <ChildMessageComponent message={message} updateMessage={updateMessage} />
-      <button onClick={updateMessage}>Update Message</button>
+      <button className= {'px-4 py-4 mb-4 bg-red-300  hover:bg-red-800 hover:text-white'} onClick={updateMessage}>Update Message</button>
     </div>
   );
 };
