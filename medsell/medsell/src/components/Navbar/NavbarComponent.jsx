@@ -12,7 +12,7 @@ function NavbarComponent() {
             <div>
               {/* Logo */}
               <Link to="/" className="flex items-center py-4 px-2">
-                <img src="/logo.png" alt="Logo" className="h-8 w-8 mr-2" />
+                <img src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1720656000&semt=ais_user" alt="Logo" className="h-8 w-8 mr-2" />
                 <span className="font-semibold text-gray-500 text-lg">HealMe</span>
               </Link>
             </div>

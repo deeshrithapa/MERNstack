@@ -15,14 +15,14 @@ import NavbarComponent from './components/Navbar/NavbarComponent';
 import HomeComponents from './components/Home/HomeComponents';
 import AboutComponents from './components/About/AboutComponents';
 import ShopComponents from './components/Shop/ShopComponents';
+import CardComponent from './components/Card/CardComponent';
 
 const App = () => {
   return (
-    <Router>
-   
-    
+    <Router>    
     {/* <Navbar /> */}
      <NavbarComponent/>
+    
     {/* <div className="components-container">
       <ClassComponent />
       <GreetComponent />
@@ -35,9 +35,6 @@ const App = () => {
     <Route path="/" element={<HomeComponents />} />
     <Route path="/about" element={<AboutComponents />} />
     <Route path="/shop" element={<ShopComponents />} />
-
-
-
     </Routes>
     </Router>
     
