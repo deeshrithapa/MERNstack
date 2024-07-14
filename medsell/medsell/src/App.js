@@ -16,12 +16,14 @@ import HomeComponents from './components/Home/HomeComponents';
 import AboutComponents from './components/About/AboutComponents';
 import ShopComponents from './components/Shop/ShopComponents';
 import CardComponent from './components/Card/CardComponent';
+import TodoApp from './components/ToDo/ToDoComponent';
 
 const App = () => {
   return (
     <Router>    
     {/* <Navbar /> */}
      <NavbarComponent/>
+    
     
     {/* <div className="components-container">
       <ClassComponent />
