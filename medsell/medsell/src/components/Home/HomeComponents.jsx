@@ -1,6 +1,8 @@
 import React from 'react';
 import CardComponent from '../Card/CardComponent';
 import EventHandling from '../EventHandling/EventHandling';
+import EventFunctionProps from '../EventHandling/EventFunctionProps';
+import ParentComponent from '../PropDrilling/ParentComponent';
 
 const HomeComponents = () => {
   const productData=[
@@ -18,7 +20,8 @@ const HomeComponents = () => {
 return (
   <div>
       <CardComponent data={productData} />
-      <EventHandling />
+      <EventFunctionProps />
+      <ParentComponent/>
   </div>
 );
 }
