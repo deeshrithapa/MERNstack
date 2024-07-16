@@ -17,6 +17,8 @@ import AboutComponents from './components/About/AboutComponents';
 import ShopComponents from './components/Shop/ShopComponents';
 import CardComponent from './components/Card/CardComponent';
 import TodoApp from './components/ToDo/ToDoComponent';
+import ProductComponent from './components/ProductComponent/ProductComponent';
+import ContactComponent from './components/Contact/ContactComponent';
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
     <Route path="/" element={<HomeComponents />} />
     <Route path="/about" element={<AboutComponents />} />
     <Route path="/shop" element={<ShopComponents />} />
+    <Route path="/contact" element={<ContactComponent />} />
+    <Route path="/product" element={<ProductComponent />} />
     </Routes>
     </Router>
     

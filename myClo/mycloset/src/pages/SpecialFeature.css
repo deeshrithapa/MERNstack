@@ -1,0 +1,30 @@
+.bg-beige {
+    background-color: #EEE9DD;
+  }
+  
+  .bg-card {
+    background-color: #C8B8A2;
+  }
+  
+  .feature-cards {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #C8B8A2;
+  }
+  
+  .feature-cards::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .feature-cards::-webkit-scrollbar-track {
+    background: #C8B8A2;
+  }
+  
+  .feature-cards::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .feature-cards::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  

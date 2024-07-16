@@ -4,8 +4,11 @@
 .navbar-custom {
   background-color: #C8B8A2;
   font-family: 'Source Serif Pro', serif;
-  height: 60px;
-  padding-bottom: 90px;
+  height: 50px; /* Adjusted height */
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+  padding: 0 20px; /* Add padding for left and right */
 }
 
 .navbar-custom .text-white {
@@ -21,6 +24,21 @@
 }
 
 .brand-name {
-  font-size: 2rem; 
+  font-size: 2rem;
   font-weight: 200;
+}
+
+/* Mobile menu adjustments */
+.mobile-menu-button {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-menu li {
+    text-align: center;
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import CardComponent from '../Card/CardComponent';
+import LifecycleComponent from '../react_lifecycle/lifecycleComponent';
 
 const ShopComponents = () => {
   const productData=[
@@ -15,8 +16,17 @@ const ShopComponents = () => {
     },
 ]; 
   return (
+    <>
     <CardComponent data={productData} />
+    <LifecycleComponent/>
+
+    </>
+    
   )
 }
 
+
+
 export default ShopComponents
+
+
