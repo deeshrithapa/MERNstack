@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
+import FormValidation from '../FormValidation/FormValidation';
 
 const ProductComponent = () => {
-  const [productName, setProductName] = useState("");
-  const [productType, setProductType] = useState("");
-  const [ProductPrice, setProductPrice] = useState("");
+  // const [productName, setProductName] = useState("");
+  // const [productType, setProductType] = useState("");
+  // const [ProductPrice, setProductPrice] = useState("");
 
   return (
     <>
       <div className='flex justify-center bg-slate-400 m-5 p-3 w-32 text-lg rounded-2xl hover:bg-teal-600 hover:text-white'>  Add Product  </div>
 
-      <h1>{productName}</h1>
+      <FormValidation/>
+
+      {/* <h1>{productName}</h1>
       <h2>{productType}</h2>
       <h2>{setProductPrice}</h2>
 
@@ -55,7 +58,7 @@ const ProductComponent = () => {
           <button className='bg-slate-500 w-24 p-2 rounded-xl text-white'> Submit</button>
         </div>      
 
-      </form>
+      </form> */}
     </>
   );
 }

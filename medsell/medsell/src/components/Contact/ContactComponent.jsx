@@ -5,10 +5,10 @@ import RegisterForm from '../AssignmentForm/RegisterForm'
 
 const ContactComponent = () => {
   return (
-    <div className="min-h-screen bg-white py-8">
+    <div className="min-h-screen bg-gray-400 py-8">
       
-      <LoginForm />
-      <RegisterForm />
+      {/* <LoginForm />
+      <RegisterForm /> */}
       <ContactForm />
     </div>
   );

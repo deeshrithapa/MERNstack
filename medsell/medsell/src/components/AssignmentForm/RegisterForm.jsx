@@ -2,7 +2,7 @@ import React from 'react';
 
 const RegisterForm = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-red-800">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="bg-white p-12 rounded-lg shadow-lg flex w-full max-w-4xl">
         <div className="w-1/2 mr-12">
           <h2 className="text-3xl font-bold mb-6 text-red-700 text-center">Register</h2>
