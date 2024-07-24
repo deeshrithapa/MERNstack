@@ -10,24 +10,27 @@ const userSchema = new Schema({
         type:Number,
         required:true
     },
-    address:{
-        type:String,
-        required:true
-    },
-    email:{
-        type:String,
-        required:true
-    },
-    phone:{
-        type:Number,
-        required:true
-    },
-    date:{
-        type:Date,
-       default:Date.now
-    },
+    // address:{
+    //     type:String,
+    //     required:true
+    // },
+    // email:{
+    //     type:String,
+    //     required:true
+    // },
+    // phone:{
+    //     type:Number,
+    //     required:true
+    // },
+    // date:{
+    //     type:Date,
+    //    default:Date.now
+    // },
     role:{
         type:String,
         enum:["admin", "user'"]       
     }
 });
+
+const User = mongoose.model("User", userSchema);
+module.exports = User;

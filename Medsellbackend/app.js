@@ -59,12 +59,19 @@
 
 const express=require('express');
 const app = express();
+require('dotenv').config();
 const connectDB = require("./src/Config/db");
-app.use(express.json());
-const port = 3000;
+const userRoute=require("./src/Routes/userRoute")
 
+app.use(express.json());
+
+// const port = 3000;
+const port = process.env.port;
 //used to connect to the database
 connectDB();
+
+app.use('/user', userRoute)
+
 
 
   
@@ -72,3 +79,27 @@ app.listen(port, ()=>{
     console.log(`server is running on ${port}`)
 })
 
+
+// const express = require('express');
+// const app = express();
+// require('dotenv').config();
+
+// const connectDB = require("./src/Config/db");
+// const userRoute = require("./src/Routes/userRoute")
+// const RecipeRoute = require("./src/Routes/RecipeRoute")
+
+// app.use(express.json()); 
+// const port = process.env.PORT;
+
+// //used to connect to database
+// connectDB();
+
+// app.use('/user', userRoute)
+// app.use('/recipe', RecipeRoute)
+
+
+
+// // no code below this
+// app.listen(port, ()=>{
+//     console.log(`server is running on ${port}`)
+// })
