@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User = require('../Models/authUserModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
@@ -29,15 +29,17 @@ const registerUser = async (req, res) => {
       },
     };
 
-    jwt.sign(
-      payload,
-      process.env.JWT_SECRET,
-      { expiresIn: '1h' },
-      (err, token) => {
-        if (err) throw err;
-        res.json({ token });
-      }
-    );
+    
+
+    // jwt.sign(
+    //   payload,
+    //   process.env.JWT_SECRET,
+    //   { expiresIn: '1h' },
+    //   (err, token) => {
+    //     if (err) throw err;
+    //     res.json({ msg:"User Registered suceffully", token, user:user });
+    //   }
+    // );
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server error');
@@ -72,7 +74,7 @@ const loginUser = async (req, res) => {
       { expiresIn: '1h' },
       (err, token) => {
         if (err) throw err;
-        res.json({ token });
+        res.json({msg:"User Logged-In sucessfully", token, userDetails:user });
       }
     );
   } catch (err) {
