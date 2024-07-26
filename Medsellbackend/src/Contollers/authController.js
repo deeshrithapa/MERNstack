@@ -2,6 +2,7 @@ const User = require('../Models/authUserModel');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
+const UserProfile = require('../Models/userProfile')
 
 dotenv.config();
 
@@ -20,17 +21,22 @@ const registerUser = async (req, res) => {
       email,
       password,
     });
-
-    await user.save();
-
-    const payload = {
-      user: {
-        id: user.id,
-      },
-    };
-
     
+    await user.save(); //user id cretaed after registration
 
+    //Create profile for new user
+    const newProfile = new UserProfile({user:user._id});
+    await newProfile.save();
+
+
+    //do this if youwa nt to redirect to dashboard after registration
+    // const payload = {
+    //   user: {
+    //     id: user.id,
+    //   },
+    // };     
+    
+    
     // jwt.sign(
     //   payload,
     //   process.env.JWT_SECRET,
@@ -40,6 +46,12 @@ const registerUser = async (req, res) => {
     //     res.json({ msg:"User Registered suceffully", token, user:user });
     //   }
     // );
+
+    res.status(201).json({
+      msg: "User registered sucessfully",
+      user: user,
+      userProfile: newProfile,
+    });
   } catch (err) {
     console.error(err.message);
     res.status(500).send('Server error');
