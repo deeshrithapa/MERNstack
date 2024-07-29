@@ -29,7 +29,7 @@ const registerUser = async (req, res) => {
     await newProfile.save();
 
 
-    //do this if youwa nt to redirect to dashboard after registration
+    //do this if you want to redirect to dashboard after registration
     // const payload = {
     //   user: {
     //     id: user.id,
